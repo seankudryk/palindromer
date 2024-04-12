@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Palindromer</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="hero"><div class="hero-filter"></div></div>
+    <div class="help" id="help">
+      <div class="help-btn-container">
+        <button class="help-btn" id="help-btn">?</button>
+      </div>
+      <div class="help-text-container">
+        <p class="help-text" id="help-text">pal·​in·​drome: a word, verse, or sentence or a number that reads the same backward or forward. (ie. madam, race car, 1001)</p>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="title-container">
+        <h1 class="app-title">Palindromer</h1>
+      </div>
+      <section class="content-container">
+        <div class="inner-content-container">
+          <label for="text-input">Enter a word or phrase: </label>
+          <input id="text-input" class="palindrome-input" type="text" value=""></input>
+          <button id="check-btn" class="check-btn">Submit</button>
+          <div id="result" class="result"></div>
+        </div>
+      </section>
+    </div>
+    <footer>
+        <p class="author-name">Made by <a href="https://github.com/seankudryk">Sean Kudryk</a></p>
+        <p class="fcc-link">Challenge courtesy of <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-palindrome-checker-project/build-a-palindrome-checker">freeCodeCamp</a></p>
+      </ul>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
