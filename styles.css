@@ -1,0 +1,202 @@
+* {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 500px;
+}
+
+.app-title {
+  color: white;
+  font-family: serif;
+  padding-left: 30px; 
+  font-size: 50px;
+  filter: drop-shadow(3px 3px rgb(62, 81, 81));
+  /* alternate drop-shadow color: chocolate*/
+}
+
+/*write some sort of text animation for the app-title which reverses palindromer when you mouse-over*/
+
+.hero {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("https://storage.needpix.com/rsynced_images/book-1859063_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero-filter {
+  z-index: 0;
+  background: linear-gradient(rgba(62, 81, 81, 0.5)
+, rgba(222, 203, 164, 0.5));
+  height: 100%;
+  width: 100%;
+}
+
+.help {
+  display: flex;
+  z-index: 3;
+  background-color: none;
+}
+
+.help-btn-container {
+  padding: 10px;
+}
+
+.help-btn {
+  all: unset;
+  border: 2px solid beige;
+  font-size: 40px;
+  padding: 5px 20px;
+  border-radius: 50%;
+  color: beige;
+}
+
+.help-text {
+  display: none;
+  color: beige;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.main-container {
+  width: 100%;
+  height: 50%;
+  position: absolute; 
+  padding: 0;
+  top: 10vh;
+}
+
+@media only screen and (max-height: 400px) {
+  .main-container {
+    top: -5%;
+  }
+}
+
+.title-container {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  border: 2px solid black;
+  background-color: white;
+  padding: 25px;
+  width: 50%;
+  height: 75%;
+  max-height: 250px;
+  max-width: 500px;
+  min-width: 200px;
+  border-radius: 15px;
+  z-index: 1;
+  margin: auto;
+  filter: drop-shadow(5px 5px #450238);
+}
+
+.inner-content-container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  text-align: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+label {
+  font-family: serif;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#check-btn {
+  all: unset;
+  margin: auto;
+  background-color: rgb(62, 81, 81);
+  color: beige;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: serif;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+#check-btn:hover {
+  background-color: black;
+}
+
+#check-btn:active {
+  border: 2px solid gray;
+  border-radius: 12px;
+}
+
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
+  text-align: center;
+  max-height: 50px;
+  width: 75%;
+  margin: auto;
+}
+
+.result {
+  font-family: serif;
+  font-size: 25px;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  color: beige;
+  font-family: sans-serif;
+  bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-wrap: no-wrap;
+}
+
+footer .author-name {
+  margin: 0;
+  padding-left: 10px;
+}
+
+footer .fcc-link {
+  margin: 0;
+  padding-right: 10px;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  text-decoration: underline;
+  color: inherit;
+}
+
